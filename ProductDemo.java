@@ -97,10 +97,10 @@ public class ProductDemo extends JFrame implements ActionListener {
     JScrollPane billScroll;          
     boolean billGenerated = false;   
  
-    private final String url = "J-D-B-C.U-R-L";
-    private final String user = "U-S-E-R-N-A-M-E";
-    private final String pass = "P-A-S-S-W-O-R-D";
- 
+    private final String url = System.getenv("DB_URL");
+    private final String user = System.getenv("DB_USER");
+    private final String pass = System.getenv("DB_PASSWORD");
+    
     ProductDemo() {
 
         setTitle("Smart Shopping Cart Billing System");

@@ -97,9 +97,9 @@ public class ProductDemo extends JFrame implements ActionListener {
     JScrollPane billScroll;          
     boolean billGenerated = false;   
  
-    private final String url = System.getenv("DB_URL");
-    private final String user = System.getenv("DB_USER");
-    private final String pass = System.getenv("DB_PASSWORD");
+    private final String url = ("DB_URL");
+    private final String user = ("DB_USER");
+    private final String pass = ("DB_PASSWORD");
     
     ProductDemo() {
 
